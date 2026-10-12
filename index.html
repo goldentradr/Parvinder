@@ -5,22 +5,28 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#080807">
+<meta name="description" content="Singh Golden Trade — trading-related updates and information by Parvinder Singh.">
 <title>Singh Golden Trade | Parvinder Singh</title>
 
 <style>
 *{box-sizing:border-box}
+html{scroll-behavior:smooth}
+
 body{
   margin:0;
-  background:radial-gradient(ellipse at top,#30230b 0%,#11100c 35%,#050505 75%);
+  background:radial-gradient(ellipse at top,#3b1010 0%,#241709 25%,#100d09 48%,#050505 78%);
   color:#fff5d6;
   font-family:Arial,Helvetica,sans-serif;
   text-align:center;
+  min-height:100vh;
 }
+
 .page{
-  width:min(100% - 28px,440px);
+  width:min(calc(100% - 28px),440px);
   margin:auto;
   padding:24px 0 30px;
 }
+
 .photo{
   display:block;
   width:100%;
@@ -29,34 +35,39 @@ body{
   object-fit:cover;
   border:1px solid #c9a54a;
   border-radius:17px;
-  box-shadow:0 0 24px #c79b3525;
+  box-shadow:0 0 24px #c79b3525,0 0 45px #ff252510;
   -webkit-user-drag:none;
   user-select:none;
   -webkit-user-select:none;
 }
+
 .brand{
   margin:22px 0 8px;
   font-size:clamp(28px,8vw,37px);
   line-height:1.2;
   font-weight:900;
   letter-spacing:1px;
-  background:linear-gradient(100deg,#fff1a4,#e9b746,#fff4bc);
+  background:linear-gradient(100deg,#fff5bf,#e9b746,#fff4bc,#d69b25);
   color:transparent;
   background-clip:text;
   -webkit-background-clip:text;
+  filter:drop-shadow(0 0 12px #d8a52b20);
 }
+
 .tagline{
   color:#cbbd96;
-  font-size:13px;
+  font-size:12px;
   letter-spacing:3px;
   margin:12px 0 23px;
 }
+
 .chart{
   display:inline-flex;
   vertical-align:middle;
   color:#f3c65e;
   margin-right:5px;
 }
+
 .join{
   display:flex;
   align-items:center;
@@ -76,73 +87,106 @@ body{
   background:linear-gradient(110deg,#bd8420,#ffe89a,#d5a13c,#ffe9a0);
   box-shadow:0 5px 0 #78521a,0 0 25px #e8b94330;
   animation:float 2.2s ease-in-out infinite;
-  transition:filter .2s;
+  transition:filter .2s,box-shadow .2s;
 }
-.join:hover{filter:brightness(1.12)}
+
+.join:hover{
+  filter:brightness(1.12);
+  box-shadow:0 5px 0 #78521a,0 0 32px #e8b94365;
+}
+
 .join.second{animation-delay:.5s}
+
 .telegram{
   width:31px;
   height:31px;
   flex-shrink:0;
 }
+
 .join span{flex:1}
+
 @keyframes float{
   0%,100%{transform:translateY(0)}
   50%{transform:translateY(-5px)}
 }
+
 .trust{
   margin:25px 0;
-  padding:17px 12px;
+  padding:19px 13px;
   border-top:1px solid #b48a343d;
   border-bottom:1px solid #b48a343d;
+  background:linear-gradient(100deg,#ffffff03,#d6a63309,#ffffff03);
+  border-radius:8px;
   color:#dfd2af;
   font-size:13px;
-  line-height:1.8;
+  line-height:1.9;
 }
+
 .trust strong{
   display:block;
   color:#f2cd73;
   font-size:15px;
   margin-bottom:5px;
+  letter-spacing:1px;
 }
+
 .timer-label{
-  color:#d5c49b;
+  color:#ff7777;
   font-size:13px;
-  margin:25px 0 10px;
+  font-weight:bold;
+  letter-spacing:2px;
+  margin:27px 0 12px;
 }
+
 .timer{
   display:inline-block;
-  min-width:155px;
-  padding:12px 20px;
-  color:#ffdb7d;
-  font-size:31px;
+  min-width:190px;
+  padding:14px 22px;
+  color:#ff3434;
+  font-size:34px;
   font-weight:900;
-  letter-spacing:3px;
-  background:#17130a;
-  border:1px solid #a9802e;
-  border-radius:12px;
-  box-shadow:0 0 20px #d9a63b15;
+  letter-spacing:4px;
+  font-variant-numeric:tabular-nums;
+  background:linear-gradient(145deg,#210606,#090303);
+  border:1px solid #ff3030;
+  border-radius:14px;
+  box-shadow:0 0 8px #ff202055,0 0 24px #ff000035,inset 0 0 15px #ff000015;
+  text-shadow:0 0 12px #ff2020aa;
 }
+
 .timer-note{
   font-size:11px;
-  color:#a99c7d;
-  margin:10px 0 22px;
+  color:#c5a7a7;
+  line-height:1.7;
+  margin:12px 0 22px;
 }
+
 .footer-photo{margin-top:32px}
+
 .footer{
   margin:23px 0 5px;
   color:#e7c36d;
   font-size:15px;
   font-weight:bold;
   letter-spacing:2px;
+  text-shadow:0 0 12px #e7c36d20;
 }
+
 .owner{
   margin-top:9px;
   color:#c6bda7;
   font-size:13px;
 }
+
+@media(max-width:360px){
+  .page{width:calc(100% - 22px)}
+  .join{font-size:16px;padding:12px}
+  .timer{font-size:29px;min-width:175px}
+}
+
 @media(prefers-reduced-motion:reduce){
   .join{animation:none}
+  html{scroll-behavior:auto}
 }
 </style>
 </head>
@@ -150,7 +194,7 @@ body{
 <body>
 <main class="page">
 
-  <!-- TOP PHOTO: upload top.jpg to the repository -->
+  <!-- Upload top.jpg to the repository -->
   <img class="photo" src="top.jpg"
        alt="Singh Golden Trader"
        draggable="false" oncontextmenu="return false">
@@ -211,7 +255,7 @@ body{
     Countdown to zero — the Join Now buttons remain available.
   </p>
 
-  <!-- BOTTOM PHOTO: upload bottom.jpg to the repository -->
+  <!-- Upload bottom.jpg to the repository -->
   <img class="photo footer-photo" src="bottom.jpg"
        alt="Singh Golden Trade"
        draggable="false" oncontextmenu="return false">
@@ -222,29 +266,33 @@ body{
 </main>
 
 <script>
-/* 30-second display countdown; it does not block joining */
+/* 30-second display countdown; joining remains available */
 let seconds = 30;
 const timer = document.getElementById("timer");
 const note = document.getElementById("timerNote");
 
 const countdown = setInterval(() => {
   seconds = Math.max(0, seconds - 1);
-  const mins = String(Math.floor(seconds / 60)).padStart(2, "0");
-  const secs = String(seconds % 60).padStart(2, "0");
-  timer.textContent = `00:${mins}:${secs}`;
 
-  if (seconds === 0) {
+  const hours = String(Math.floor(seconds / 3600)).padStart(2, "0");
+  const mins = String(Math.floor((seconds % 3600) / 60)).padStart(2, "0");
+  const secs = String(seconds % 60).padStart(2, "0");
+
+  timer.textContent = `${hours}:${mins}:${secs}`;
+
+  if(seconds === 0){
     clearInterval(countdown);
     note.textContent = "You're welcome to join the community anytime.";
   }
-}, 1000);
+},1000);
 
-/* Basic deterrents only; these cannot prevent all image saving */
-document.addEventListener("contextmenu", event => {
-  if (event.target.tagName === "IMG") event.preventDefault();
+/* Basic image-saving deterrents only */
+document.addEventListener("contextmenu",event=>{
+  if(event.target.tagName==="IMG") event.preventDefault();
 });
-document.querySelectorAll("img").forEach(img => {
-  img.addEventListener("dragstart", event => event.preventDefault());
+
+document.querySelectorAll("img").forEach(img=>{
+  img.addEventListener("dragstart",event=>event.preventDefault());
 });
 </script>
 </body>
